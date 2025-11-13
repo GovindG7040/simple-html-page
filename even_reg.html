@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+        <label for="address">Address:</label>
+        <textarea cols="30" rows="5" id="address" name="address" placeholder="Enter your address" required></textarea><br><br>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB" required><br><br>
+        <label for="Gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required><br><br>
+        <label for="Events">Events:</label>
+        <select  id="events" name="events" required>
+            <option value="workshop">Workshop</option>
+            <option value="seminar">Seminar</option>
+            <option value="conference">Conference</option>
+        </select><br><br>
+        <label for="image">Upload your image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+        <p>Disclaimer: By uploading your image, you agree to our terms and conditions.</p>
+        <input type="submit" value="Register">
+        </fieldset>
+    </form>
+</body>
+</html>
